@@ -36,4 +36,5 @@ process.on("uncaughtException", (err) => {
 require("./painel")(client);
 
 // login
+console.log("TOKEN:", process.env.TOKEN);
 client.login(process.env.TOKEN);
